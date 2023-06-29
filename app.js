@@ -1,3 +1,10 @@
+const mongoose = require("mongoose");
+
+const DB_HOST =
+  "mongodb+srv://Vika:tJqjcCymgzZRA0h1@cluster0.lcnxs2e.mongodb.net/contacts_reader?retryWrites=true&w=majority";
+
+mongoose.connect(DB_HOST);
+
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
